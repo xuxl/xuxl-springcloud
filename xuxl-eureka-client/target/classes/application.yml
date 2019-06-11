@@ -1,0 +1,16 @@
+#配置服务名称及端口
+spring:
+  application:
+    name: eureka-client 
+  zipkin:
+    base-url: http://localhost:9411
+server:
+  port: 2001
+  
+#将服务注册到注册中心
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1001/eureka/
+
+

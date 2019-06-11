@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: zipkin-server
+server:
+  port: 9411
+  
+#去除控制台异常
+management:
+  metrics:
+    web:
+      server:
+        auto-time-requests: false

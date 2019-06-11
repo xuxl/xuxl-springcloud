@@ -1,0 +1,22 @@
+#指定服务名和端口
+spring: 
+  application: 
+    name: zuul
+server: 
+  port: 8001
+#注册到注册中心
+eureka: 
+  client: 
+    serviceUrl: 
+      defaultZone: http://localhost:1001/eureka/
+ 
+#单例配置
+zuul: 
+  routes: 
+    hystrix: 
+      path: /hystrix/**
+      url: http://localhost:5001/
+    ribbon: 
+      path: /ribbon/**
+      serviceId: ribbon-consumer
+    feign-consumer: /feign-consumer/**

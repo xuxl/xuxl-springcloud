@@ -1,0 +1,25 @@
+#配置服务名称及端口
+spring: 
+  application: 
+    name: hystrix-consumer
+server: 
+  port: 5001
+#服务注册中心实例的主机名
+eureka: 
+  client: 
+    serviceUrl: 
+      defaultZone: http://localhost:1001/eureka/
+#设置超时时间
+hystrix: 
+  command:  
+    default: 
+      execution: 
+        isolation: 
+          thread: 
+            timeoutInMilliseconds: 3000
+      #设置请求总数下限
+      circuitBreaker: 
+        requestVolumeThreshold: 5
+        #错误百分比下限
+        errorThresholdPercentage: 60
+
