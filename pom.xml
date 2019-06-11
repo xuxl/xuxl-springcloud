@@ -54,7 +54,7 @@
   </build>
   
   <modules>
-  	<module>xuxl-eureak</module>
+  	<module>xuxl-eureka-server</module>
   	<module>xuxl-config</module>
   	<module>xuxl-zuul</module>
   	<module>xuxl-hystrix</module>
