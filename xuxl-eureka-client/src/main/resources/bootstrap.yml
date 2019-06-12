@@ -3,10 +3,10 @@ spring:
     name: eureka-client # 对应bf-config-server所获取的配置文件的{application}
   cloud:
     config:
-      uri: ${config.uri:http://172.4.6.2:9001/}
+      uri: ${config.uri:http://localhost:9001/}
       label: master
   profiles:
-    active: "@spring.profiles.active@"   #local dev mdb mcas
+    active: ${config.profile:dev}   #local dev mdb mcas
     
 
 management:
