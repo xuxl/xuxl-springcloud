@@ -63,6 +63,15 @@
                             <directory>${project.build.directory}</directory>
                             <include>${project.build.finalName}.jar</include>
                         </resource>
+                         <resource>
+			                <directory>src/main/resources</directory>
+			                <includes>
+			                    <include>application-${profileActive}.yml</include>
+			                    <include>application.yml</include>
+			                    <include>**/*.xml</include>
+			                </includes>
+			                <filtering>true</filtering>
+			            </resource>
                     </resources>
                 </configuration>
             </plugin>
