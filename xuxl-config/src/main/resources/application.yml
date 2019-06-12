@@ -3,7 +3,7 @@ spring:
   application:
     name:  config-server
   profiles: 
-    active: ${spring.profiles}
+    active: "@spring.profiles@"
   cloud:
     config:
       server:
