@@ -6,7 +6,7 @@ spring:
       uri: ${config.uri:http://172.4.6.2:9001/}
       label: master
   profiles:
-    active: ${spring.profiles.active}   #local dev mdb mcas
+    active: "@spring.profiles.active@"   #local dev mdb mcas
     
 
 management:
