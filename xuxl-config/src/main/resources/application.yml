@@ -2,7 +2,8 @@
 spring:
   application:
     name:  config-server
-  profiles: dev
+  profiles: 
+    active: ${spring.profiles}
   cloud:
     config:
       server:

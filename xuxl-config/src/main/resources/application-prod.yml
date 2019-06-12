@@ -2,8 +2,7 @@
 spring:
   application:
     name:  config-server
-  profiles:
-    active: prod
+  profiles: prod
   cloud:
     config:
       server:
