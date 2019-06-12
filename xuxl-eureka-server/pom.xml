@@ -9,8 +9,8 @@
 	<version>0.0.1-SNAPSHOT</version>
   </parent>
    
-  <artifactId>xuxl-eureak-server</artifactId>
-  <name>eureakServer</name>
+  <artifactId>xuxl-eureka-server</artifactId>
+  <name>eurekaServer</name>
   <description>eurekaServer服务</description>
   
   <dependencies>
