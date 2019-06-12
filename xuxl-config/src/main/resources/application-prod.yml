@@ -2,7 +2,8 @@
 spring:
   application:
     name:  config-server
-  profiles: dev
+  profiles:
+    active: prod
   cloud:
     config:
       server:
@@ -19,7 +20,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone:  http://localhost:1001/eureka/
+      defaultZone:  http://172.4.6.1:1001/eureka/
 
 
       

@@ -4,8 +4,6 @@ server:
 spring:
   application:
     name: eureka-server
-  profiles:
-    active: ${spring.profiles}
 eureka:
   instance:
     hostname: localhost #服务注册中心实例的主机名
