@@ -1,7 +1,7 @@
 #配置环境
 spring:
   profiles: 
-    active: "@profileActive@"
+    active: "@activatedProperties@"
 
 
       
