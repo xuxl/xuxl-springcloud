@@ -1,4 +1,4 @@
-#配置服务名称及端口
+﻿#配置服务名称及端口
 spring:
   application:
     name:  config-server
@@ -10,8 +10,8 @@ spring:
           uri:  https://github.com/xuxl/xuxl-springcloud-configs.git
           search-paths:  /**  #配置文件所在的目录
       label: master #配置文件所在的分支
-      username:  xuxl #git仓库的用户名
-      password:  xuxl0406 #git仓库的密码
+      username:  **** #git仓库的用户名
+      password:  ***** #git仓库的密码
       
 server:
   port:  9001
